@@ -64,7 +64,13 @@
                       </a>
                       <custom-main-menu></custom-main-menu>
                   </div>
-                  <div class="flex items-center justify-end my-2.5">
+                  <div class="flex items-center justify-end my-2.5 gap-3">
+                      {# Consultation CTA — visible on desktop #}
+                      <a href="#lf-contact" class="hidden md:inline-flex items-center px-5 py-2 rounded-lg text-xs font-bold transition-all duration-300"
+                         style="background: var(--lf-gold, #c9a84c); color: var(--lf-navy, #0f1b2d);">
+                          <i class="sicon-calendar-date rtl:ml-1.5 ltr:mr-1.5"></i>
+                          {{ trans('lawfirm.hero.cta_book') }}
+                      </a>
                       {% if user.type=='user' %}
                         <salla-user-menu avatar-only show-header></salla-user-menu>
                       {% else %}
@@ -72,7 +78,7 @@
                             <i class="header-btn__icon sicon-user-circle"></i>
                           </button>
                       {% endif %}
-                      <salla-cart-summary class="ml-4 rtl:ml-[unset] rtl:mr-4">
+                      <salla-cart-summary class="ml-2 rtl:ml-[unset] rtl:mr-2">
                         <i slot="icon" class="header-btn__icon icon sicon-shopping-bag"></i>
                       </salla-cart-summary>
                   </div>

@@ -3,6 +3,12 @@
     "header": {
       "cart": "Cart"
     },
+    "footer": {
+      "pages_links": "Quick Links"
+    },
+    "home": {
+      "testimonials": "What Our Clients Say"
+    },
     "appBanner": {
       "download_now": "download now"
     }
@@ -23,5 +29,175 @@
   "common": {
     "bank_offer_sub_title_multiple": "Pay for your purchases via one of the following bank cards and get the specified discount",
     "bank_offer_sub_title_single": "Pay for your purchases via :bank_name bank card and get discount"
+  },
+  "lawfirm": {
+    "hero": {
+      "badge": "Licensed IP Law Firm",
+      "title": "Protecting Your Brand Starts Here",
+      "subtitle": "Specialized legal services in Intellectual Property, Commercial Contracts, and Regulatory Advisory across Saudi Arabia & the GCC",
+      "cta_book": "Book a Consultation",
+      "cta_services": "Our Services"
+    },
+    "experience": {
+      "years": "15+",
+      "years_label": "Years Experience",
+      "cases": "2,500+",
+      "cases_label": "Cases Handled",
+      "clients": "800+",
+      "clients_label": "Satisfied Clients",
+      "rate": "98%",
+      "rate_label": "Success Rate"
+    },
+    "services": {
+      "label": "What We Do",
+      "title": "Our Legal Services",
+      "subtitle": "Comprehensive legal solutions designed for your business needs",
+      "s1_title": "Trademark Registration",
+      "s1_desc": "Complete trademark registration, search, opposition handling, and brand protection across Saudi Arabia, GCC, and international markets.",
+      "s2_title": "IP Protection",
+      "s2_desc": "Comprehensive intellectual property portfolio management, monitoring, and enforcement strategies.",
+      "s3_title": "Copyright Services",
+      "s3_desc": "Copyright registration, protection, and enforcement for creative works, software, and digital content.",
+      "s4_title": "Trade Names",
+      "s4_desc": "Trade name registration, protection, and dispute resolution for businesses in Saudi Arabia.",
+      "s5_title": "Industrial Designs",
+      "s5_desc": "Industrial design registration, protection strategies, and infringement defense across GCC markets.",
+      "s6_title": "IP Disputes & Litigation",
+      "s6_desc": "Trademark oppositions, IP disputes, commercial dispute strategy, and pre-litigation advisory.",
+      "s7_title": "Legal Consultation",
+      "s7_desc": "Expert one-on-one legal advisory sessions for any IP or commercial law matter.",
+      "learn_more": "Learn More"
+    },
+    "why": {
+      "label": "Our Advantage",
+      "title": "Why Choose Us",
+      "subtitle": "We deliver results, not just advice",
+      "r1_title": "Specialized Team",
+      "r1_desc": "Former government and regulatory professionals with deep IP expertise.",
+      "r2_title": "Proven Track Record",
+      "r2_desc": "Extensive experience with Saudi IP Authority processes and commercial disputes.",
+      "r3_title": "Full-Service Approach",
+      "r3_desc": "From registration to litigation, we handle every aspect of IP protection.",
+      "r4_title": "Absolute Confidentiality",
+      "r4_desc": "Your business information and legal matters are protected with the highest security."
+    },
+    "pricing": {
+      "label": "Transparent Pricing",
+      "title": "Our Packages & Pricing",
+      "subtitle": "Clear, competitive pricing for all our legal services",
+      "trademark_title": "Trademark Registration Packages",
+      "tm_basic_name": "Basic Filing",
+      "tm_basic_subtitle": "Individual & Startups",
+      "tm_basic_price": "SAR 3,000",
+      "tm_basic_f1": "Trademark search & availability check",
+      "tm_basic_f2": "Filing application with SAIP",
+      "tm_basic_f3": "Basic filing guidance",
+      "popular": "Most Popular",
+      "tm_protect_name": "Protection Package",
+      "tm_protect_subtitle": "Growing Businesses",
+      "tm_protect_price": "SAR 5,500",
+      "tm_protect_f1": "Full search + filing",
+      "tm_protect_f2": "Ongoing risk monitoring",
+      "tm_protect_f3": "Objection handling guidance",
+      "tm_protect_f4": "Follow-up with authorities",
+      "tm_full_name": "Full Protection",
+      "tm_full_subtitle": "Established Companies",
+      "tm_full_price": "SAR 8,000–12,000",
+      "tm_full_f1": "Complete filing management",
+      "tm_full_f2": "Office action responses included",
+      "tm_full_f3": "Strategy to minimize rejection risk",
+      "tm_full_f4": "Ongoing support & monitoring",
+      "tm_full_f5": "Annual renewal management",
+      "tm_gcc_name": "GCC Brand Protection",
+      "tm_gcc_subtitle": "Regional Expansion",
+      "tm_gcc_price": "SAR 15,000–30,000",
+      "tm_gcc_f1": "Multi-country filing strategy",
+      "tm_gcc_f2": "Coordinated GCC protection",
+      "tm_gcc_f3": "Cross-border enforcement advisory",
+      "tm_gcc_f4": "Expansion compliance support",
+      "ip_title": "Monthly Retainer Packages",
+      "ip_starter_name": "Starter",
+      "ip_starter_sub": "SMEs & Startups",
+      "ip_starter_price": "SAR 5,000/mo",
+      "ip_starter_f1": "Up to 5 hours advisory",
+      "ip_starter_f2": "Basic contract review",
+      "ip_starter_f3": "Email support",
+      "ip_growth_name": "Growth",
+      "ip_growth_sub": "Growing Businesses",
+      "ip_growth_price": "SAR 10,000/mo",
+      "ip_growth_f1": "Up to 12 hours advisory",
+      "ip_growth_f2": "Contract drafting & review",
+      "ip_growth_f3": "IP advisory support",
+      "ip_growth_f4": "Priority response",
+      "ip_growth_f5": "Quarterly IP audit",
+      "ip_premium_name": "Premium",
+      "ip_premium_sub": "Corporate & Enterprise",
+      "ip_premium_price": "SAR 20,000+/mo",
+      "ip_premium_f1": "Dedicated legal support team",
+      "ip_premium_f2": "Unlimited quick consultations",
+      "ip_premium_f3": "Complex drafting & IP management",
+      "ip_premium_f4": "Priority handling on all matters",
+      "ip_premium_f5": "Monthly compliance reports",
+      "ip_premium_f6": "24/7 emergency support line",
+      "recommended": "Recommended",
+      "cta": "Get Started"
+    },
+    "about": {
+      "label": "About Our Firm",
+      "title": "Legal Excellence Meets Business Insight",
+      "description": "We are a specialized legal practice focused on intellectual property, commercial contracts, and regulatory advisory. With former public sector experience and deep familiarity with the Saudi Authority for Intellectual Property, we deliver practical, execution-driven solutions.",
+      "f1": "Former public sector and regulatory experience",
+      "f2": "Deep familiarity with Saudi IP Authority processes",
+      "f3": "International law firm-level execution standards",
+      "f4": "Bilingual team serving Arabic and English clients"
+    },
+    "approach": {
+      "title": "Our Approach",
+      "step1_title": "Initial Consultation",
+      "step1_desc": "We assess your needs, analyze your situation, and outline the best strategy for protection.",
+      "step2_title": "Strategy Development",
+      "step2_desc": "We create a tailored legal plan with clear timelines, deliverables, and transparent pricing.",
+      "step3_title": "Execution & Filing",
+      "step3_desc": "Our team handles all filings, communications with authorities, and legal documentation.",
+      "step4_title": "Ongoing Protection",
+      "step4_desc": "We monitor your IP portfolio, handle renewals, and respond to any threats or infringements."
+    },
+    "emergency": {
+      "title": "Need Urgent IP Protection?",
+      "desc": "For time-sensitive matters, we provide rapid-response support including immediate filings, urgent objection handling, and fast legal positioning.",
+      "cta_whatsapp": "WhatsApp Us Now",
+      "cta_call": "Call Our Team"
+    },
+    "contact": {
+      "label": "Get in Touch",
+      "title": "Book a Consultation",
+      "subtitle": "Ready to protect your brand? Our team is here to help.",
+      "phone_title": "Phone",
+      "email_title": "Email",
+      "whatsapp_title": "WhatsApp",
+      "hours_title": "Office Hours",
+      "hours_value": "Sun–Thu: 9AM – 6PM",
+      "wa_message": "Hello, I would like to book a legal consultation.",
+      "wa_button": "Chat on WhatsApp",
+      "form_title": "Request a Consultation",
+      "name": "Full Name",
+      "name_placeholder": "Enter your full name",
+      "phone": "Phone Number",
+      "phone_placeholder": "+966 5XX XXX XXXX",
+      "email": "Email Address",
+      "email_placeholder": "your@email.com",
+      "service": "Service Needed",
+      "service_placeholder": "Select a service...",
+      "message": "Your Message",
+      "message_placeholder": "Briefly describe your legal needs...",
+      "submit": "Submit Request",
+      "disclaimer": "Your information is kept strictly confidential. We will contact you within 24 hours."
+    },
+    "cta": {
+      "title": "Ready to Protect Your Intellectual Property?",
+      "subtitle": "Let our experienced team safeguard your brand, trademarks, and creative assets across Saudi Arabia and the GCC.",
+      "book": "Book a Free Consultation",
+      "whatsapp": "Chat on WhatsApp"
+    }
   }
 }

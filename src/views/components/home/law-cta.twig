@@ -1,0 +1,29 @@
+{# ============================================================
+   LAW FIRM — Final CTA Section
+   Bottom call-to-action before footer
+   ============================================================ #}
+<section class="lf-section lf-section--navy-gradient">
+    <div class="container text-center">
+        <div class="max-w-3xl mx-auto">
+            <i class="sicon-shield text-4xl mb-6 block" style="color: var(--lf-gold);"></i>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-white">
+                {{ trans('lawfirm.cta.title') }}
+            </h2>
+            <p class="text-base lg:text-lg mb-8" style="color: rgba(255,255,255,0.7);">
+                {{ trans('lawfirm.cta.subtitle') }}
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#lf-contact" class="lf-btn lf-btn--primary">
+                    <i class="sicon-calendar-date rtl:ml-2 ltr:mr-2"></i>
+                    {{ trans('lawfirm.cta.book') }}
+                </a>
+                {% if store.contacts.whatsapp %}
+                <a href="https://wa.me/{{ store.contacts.whatsapp }}" target="_blank" rel="noopener" class="lf-btn lf-btn--whatsapp">
+                    <i class="sicon-whatsapp rtl:ml-2 ltr:mr-2"></i>
+                    {{ trans('lawfirm.cta.whatsapp') }}
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

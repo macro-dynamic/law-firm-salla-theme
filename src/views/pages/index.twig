@@ -7,7 +7,29 @@
 #}
 {% extends "layouts.master" %}
 {% block content %}
+    {# Law Firm Hero with Stats #}
+    {% include 'components/home/law-hero.twig' %}
+
+    {# Services Overview #}
+    {% include 'components/home/law-services.twig' %}
+
+    {# Why Choose Us #}
+    {% include 'components/home/law-why-us.twig' %}
+
+    {# Pricing Packages #}
+    {% include 'components/home/law-pricing.twig' %}
+
+    {# Emergency IP + About Brief #}
+    {% include 'components/home/law-about.twig' %}
+
+    {# Merchant-configured home components (testimonials, etc.) #}
     {% component home %}
+
+    {# Contact / Booking Form #}
+    {% include 'components/home/law-contact.twig' %}
+
+    {# Final CTA #}
+    {% include 'components/home/law-cta.twig' %}
 {% endblock %}
 {% block scripts %}
     <script defer src="{{ 'home.js' | asset }}"></script>

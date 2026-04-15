@@ -1,0 +1,152 @@
+{# ============================================================
+   LAW FIRM — Contact / Booking Section
+   Contact form + info cards + WhatsApp integration
+   ============================================================ #}
+<section id="lf-contact" class="lf-section lf-section--gray">
+    <div class="container">
+        <div class="lf-section__header">
+            <span class="lf-section__label">{{ trans('lawfirm.contact.label') }}</span>
+            <h2 class="lf-section__title">{{ trans('lawfirm.contact.title') }}</h2>
+            <p class="lf-section__subtitle">{{ trans('lawfirm.contact.subtitle') }}</p>
+        </div>
+
+        <div class="lf-contact__grid">
+            {# Contact Info Cards #}
+            <div class="lf-contact__info">
+                {% if store.contacts.phone or store.contacts.mobile %}
+                <div class="lf-contact__info-card">
+                    <div class="lf-contact__info-icon">
+                        <i class="sicon-phone text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm mb-1" style="color: var(--lf-navy);">{{ trans('lawfirm.contact.phone_title') }}</h4>
+                        <p class="text-sm" style="color: var(--lf-text-light);">
+                            <a href="tel:{{ store.contacts.phone ?: store.contacts.mobile }}" class="hover:underline">
+                                {{ store.contacts.phone ?: store.contacts.mobile }}
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if store.contacts.email %}
+                <div class="lf-contact__info-card">
+                    <div class="lf-contact__info-icon">
+                        <i class="sicon-mail text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm mb-1" style="color: var(--lf-navy);">{{ trans('lawfirm.contact.email_title') }}</h4>
+                        <p class="text-sm" style="color: var(--lf-text-light);">
+                            <a href="mailto:{{ store.contacts.email }}" class="hover:underline">{{ store.contacts.email }}</a>
+                        </p>
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if store.contacts.whatsapp %}
+                <div class="lf-contact__info-card">
+                    <div class="lf-contact__info-icon">
+                        <i class="sicon-whatsapp text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm mb-1" style="color: var(--lf-navy);">{{ trans('lawfirm.contact.whatsapp_title') }}</h4>
+                        <p class="text-sm" style="color: var(--lf-text-light);">
+                            <a href="https://wa.me/{{ store.contacts.whatsapp }}" target="_blank" rel="noopener" class="hover:underline">
+                                {{ store.contacts.whatsapp }}
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                {% endif %}
+
+                {# Office Hours #}
+                <div class="lf-contact__info-card">
+                    <div class="lf-contact__info-icon">
+                        <i class="sicon-clock text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm mb-1" style="color: var(--lf-navy);">{{ trans('lawfirm.contact.hours_title') }}</h4>
+                        <p class="text-sm" style="color: var(--lf-text-light);">{{ trans('lawfirm.contact.hours_value') }}</p>
+                    </div>
+                </div>
+
+                {# WhatsApp Direct Button #}
+                {% if store.contacts.whatsapp %}
+                <a href="https://wa.me/{{ store.contacts.whatsapp }}?text={{ trans('lawfirm.contact.wa_message')|url_encode }}" 
+                   target="_blank" rel="noopener"
+                   class="lf-btn lf-btn--whatsapp w-full text-center mt-4">
+                    <i class="sicon-whatsapp rtl:ml-2 ltr:mr-2 text-lg"></i>
+                    {{ trans('lawfirm.contact.wa_button') }}
+                </a>
+                {% endif %}
+            </div>
+
+            {# Consultation Booking Form #}
+            <div class="lf-contact__form">
+                <h3 class="text-lg font-bold mb-6" style="color: var(--lf-navy);">
+                    {{ trans('lawfirm.contact.form_title') }}
+                </h3>
+
+                <form id="lf-booking-form" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold mb-2" style="color: var(--lf-text);">
+                                {{ trans('lawfirm.contact.name') }} <span class="text-red-500">*</span>
+                            </label>
+                            <input type="text" name="name" required class="lf-contact__input" 
+                                   placeholder="{{ trans('lawfirm.contact.name_placeholder') }}">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold mb-2" style="color: var(--lf-text);">
+                                {{ trans('lawfirm.contact.phone') }} <span class="text-red-500">*</span>
+                            </label>
+                            <input type="tel" name="phone" required class="lf-contact__input"
+                                   placeholder="{{ trans('lawfirm.contact.phone_placeholder') }}">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold mb-2" style="color: var(--lf-text);">
+                            {{ trans('lawfirm.contact.email') }}
+                        </label>
+                        <input type="email" name="email" class="lf-contact__input"
+                               placeholder="{{ trans('lawfirm.contact.email_placeholder') }}">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold mb-2" style="color: var(--lf-text);">
+                            {{ trans('lawfirm.contact.service') }} <span class="text-red-500">*</span>
+                        </label>
+                        <select name="service" required class="lf-contact__input">
+                            <option value="">{{ trans('lawfirm.contact.service_placeholder') }}</option>
+                            <option value="trademark">{{ trans('lawfirm.services.s1_title') }}</option>
+                            <option value="ip_protection">{{ trans('lawfirm.services.s2_title') }}</option>
+                            <option value="copyright">{{ trans('lawfirm.services.s3_title') }}</option>
+                            <option value="trade_names">{{ trans('lawfirm.services.s4_title') }}</option>
+                            <option value="industrial_designs">{{ trans('lawfirm.services.s5_title') }}</option>
+                            <option value="ip_disputes">{{ trans('lawfirm.services.s6_title') }}</option>
+                            <option value="consultation">{{ trans('lawfirm.services.s7_title') }}</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold mb-2" style="color: var(--lf-text);">
+                            {{ trans('lawfirm.contact.message') }}
+                        </label>
+                        <textarea name="message" class="lf-contact__textarea" rows="4"
+                                  placeholder="{{ trans('lawfirm.contact.message_placeholder') }}"></textarea>
+                    </div>
+
+                    <button type="submit" class="lf-btn lf-btn--primary w-full text-center">
+                        <i class="sicon-calendar-date rtl:ml-2 ltr:mr-2"></i>
+                        {{ trans('lawfirm.contact.submit') }}
+                    </button>
+
+                    <p class="text-xs text-center" style="color: var(--lf-text-light);">
+                        {{ trans('lawfirm.contact.disclaimer') }}
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

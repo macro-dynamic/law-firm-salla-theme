@@ -1,0 +1,59 @@
+{# ============================================================
+   LAW FIRM — Hero Section
+   Full-viewport dark navy hero with gold accents
+   ============================================================ #}
+<section class="lf-hero">
+    <div class="lf-hero__overlay"></div>
+    <div class="lf-hero__decoration"></div>
+
+    <div class="lf-hero__content">
+        <div class="lf-hero__text">
+            <span class="lf-hero__badge">
+                <i class="sicon-verified-badge rtl:ml-2 ltr:mr-2"></i>
+                {{ trans('lawfirm.hero.badge') }}
+            </span>
+
+            <h1 class="lf-hero__title">
+                {{ trans('lawfirm.hero.title') }}
+            </h1>
+
+            <p class="lf-hero__subtitle">
+                {{ trans('lawfirm.hero.subtitle') }}
+            </p>
+
+            <div class="lf-hero__actions">
+                <a href="#lf-contact" class="lf-btn lf-btn--primary">
+                    <i class="sicon-calendar-date rtl:ml-2 ltr:mr-2"></i>
+                    {{ trans('lawfirm.hero.cta_book') }}
+                </a>
+                <a href="#lf-services" class="lf-btn lf-btn--outline">
+                    {{ trans('lawfirm.hero.cta_services') }}
+                    <i class="sicon-keyboard_arrow_left rtl:mr-2 ltr:hidden"></i>
+                    <i class="sicon-keyboard_arrow_right ltr:ml-2 rtl:hidden"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Stats Bar #}
+<div class="lf-stats">
+    <div class="lf-stats__grid">
+        <div class="lf-stats__item">
+            <div class="lf-stats__number">{{ trans('lawfirm.experience.years') }}</div>
+            <div class="lf-stats__label">{{ trans('lawfirm.experience.years_label') }}</div>
+        </div>
+        <div class="lf-stats__item">
+            <div class="lf-stats__number">{{ trans('lawfirm.experience.cases') }}</div>
+            <div class="lf-stats__label">{{ trans('lawfirm.experience.cases_label') }}</div>
+        </div>
+        <div class="lf-stats__item">
+            <div class="lf-stats__number">{{ trans('lawfirm.experience.clients') }}</div>
+            <div class="lf-stats__label">{{ trans('lawfirm.experience.clients_label') }}</div>
+        </div>
+        <div class="lf-stats__item">
+            <div class="lf-stats__number">{{ trans('lawfirm.experience.rate') }}</div>
+            <div class="lf-stats__label">{{ trans('lawfirm.experience.rate_label') }}</div>
+        </div>
+    </div>
+</div>

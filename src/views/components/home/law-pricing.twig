@@ -1,0 +1,238 @@
+{# ============================================================
+   LAW FIRM — Pricing Section
+   Trademark registration packages + IP service tiers
+   ============================================================ #}
+<section id="lf-pricing" class="lf-section">
+    <div class="container">
+        <div class="lf-section__header">
+            <span class="lf-section__label">{{ trans('lawfirm.pricing.label') }}</span>
+            <h2 class="lf-section__title">{{ trans('lawfirm.pricing.title') }}</h2>
+            <p class="lf-section__subtitle">{{ trans('lawfirm.pricing.subtitle') }}</p>
+        </div>
+
+        {# ---- Trademark Packages ---- #}
+        <h3 class="text-lg font-bold mb-6 lf-gold-underline pb-2" style="color: var(--lf-navy);">
+            {{ trans('lawfirm.pricing.trademark_title') }}
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            {# Basic Registration #}
+            <div class="lf-pricing-card">
+                <h4 class="lf-pricing-card__name">{{ trans('lawfirm.pricing.tm_basic_name') }}</h4>
+                <p class="lf-pricing-card__subtitle">{{ trans('lawfirm.pricing.tm_basic_subtitle') }}</p>
+                <div class="lf-pricing-card__price">{{ trans('lawfirm.pricing.tm_basic_price') }}</div>
+                <div class="lf-pricing-card__divider"></div>
+                <ul class="lf-pricing-card__features">
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.tm_basic_f1') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.tm_basic_f2') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.tm_basic_f3') }}</span>
+                    </li>
+                </ul>
+                <a href="#lf-contact" class="lf-btn lf-btn--outline-gold w-full text-center">
+                    {{ trans('lawfirm.pricing.cta') }}
+                </a>
+            </div>
+
+            {# Protection Package #}
+            <div class="lf-pricing-card lf-pricing-card--featured">
+                <span class="lf-pricing-card__badge">{{ trans('lawfirm.pricing.popular') }}</span>
+                <h4 class="lf-pricing-card__name">{{ trans('lawfirm.pricing.tm_protect_name') }}</h4>
+                <p class="lf-pricing-card__subtitle">{{ trans('lawfirm.pricing.tm_protect_subtitle') }}</p>
+                <div class="lf-pricing-card__price">{{ trans('lawfirm.pricing.tm_protect_price') }}</div>
+                <div class="lf-pricing-card__divider"></div>
+                <ul class="lf-pricing-card__features">
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.tm_protect_f1') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.tm_protect_f2') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.tm_protect_f3') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.tm_protect_f4') }}</span>
+                    </li>
+                </ul>
+                <a href="#lf-contact" class="lf-btn lf-btn--primary w-full text-center">
+                    {{ trans('lawfirm.pricing.cta') }}
+                </a>
+            </div>
+
+            {# Full Package #}
+            <div class="lf-pricing-card">
+                <h4 class="lf-pricing-card__name">{{ trans('lawfirm.pricing.tm_full_name') }}</h4>
+                <p class="lf-pricing-card__subtitle">{{ trans('lawfirm.pricing.tm_full_subtitle') }}</p>
+                <div class="lf-pricing-card__price">{{ trans('lawfirm.pricing.tm_full_price') }}</div>
+                <div class="lf-pricing-card__divider"></div>
+                <ul class="lf-pricing-card__features">
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.tm_full_f1') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.tm_full_f2') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.tm_full_f3') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.tm_full_f4') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.tm_full_f5') }}</span>
+                    </li>
+                </ul>
+                <a href="#lf-contact" class="lf-btn lf-btn--outline-gold w-full text-center">
+                    {{ trans('lawfirm.pricing.cta') }}
+                </a>
+            </div>
+
+            {# GCC Package #}
+            <div class="lf-pricing-card">
+                <h4 class="lf-pricing-card__name">{{ trans('lawfirm.pricing.tm_gcc_name') }}</h4>
+                <p class="lf-pricing-card__subtitle">{{ trans('lawfirm.pricing.tm_gcc_subtitle') }}</p>
+                <div class="lf-pricing-card__price">{{ trans('lawfirm.pricing.tm_gcc_price') }}</div>
+                <div class="lf-pricing-card__divider"></div>
+                <ul class="lf-pricing-card__features">
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.tm_gcc_f1') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.tm_gcc_f2') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.tm_gcc_f3') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.tm_gcc_f4') }}</span>
+                    </li>
+                </ul>
+                <a href="#lf-contact" class="lf-btn lf-btn--outline-gold w-full text-center">
+                    {{ trans('lawfirm.pricing.cta') }}
+                </a>
+            </div>
+        </div>
+
+        {# ---- IP Service Packages ---- #}
+        <h3 class="text-lg font-bold mb-6 lf-gold-underline pb-2" style="color: var(--lf-navy);">
+            {{ trans('lawfirm.pricing.ip_title') }}
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {# Starter #}
+            <div class="lf-pricing-card">
+                <h4 class="lf-pricing-card__name">{{ trans('lawfirm.pricing.ip_starter_name') }}</h4>
+                <p class="lf-pricing-card__subtitle">{{ trans('lawfirm.pricing.ip_starter_sub') }}</p>
+                <div class="lf-pricing-card__price">{{ trans('lawfirm.pricing.ip_starter_price') }}</div>
+                <div class="lf-pricing-card__divider"></div>
+                <ul class="lf-pricing-card__features">
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.ip_starter_f1') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.ip_starter_f2') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.ip_starter_f3') }}</span>
+                    </li>
+                </ul>
+                <a href="#lf-contact" class="lf-btn lf-btn--outline-gold w-full text-center">
+                    {{ trans('lawfirm.pricing.cta') }}
+                </a>
+            </div>
+
+            {# Growth — Featured #}
+            <div class="lf-pricing-card lf-pricing-card--featured">
+                <span class="lf-pricing-card__badge">{{ trans('lawfirm.pricing.recommended') }}</span>
+                <h4 class="lf-pricing-card__name">{{ trans('lawfirm.pricing.ip_growth_name') }}</h4>
+                <p class="lf-pricing-card__subtitle">{{ trans('lawfirm.pricing.ip_growth_sub') }}</p>
+                <div class="lf-pricing-card__price">{{ trans('lawfirm.pricing.ip_growth_price') }}</div>
+                <div class="lf-pricing-card__divider"></div>
+                <ul class="lf-pricing-card__features">
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.ip_growth_f1') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.ip_growth_f2') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.ip_growth_f3') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.ip_growth_f4') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.ip_growth_f5') }}</span>
+                    </li>
+                </ul>
+                <a href="#lf-contact" class="lf-btn lf-btn--primary w-full text-center">
+                    {{ trans('lawfirm.pricing.cta') }}
+                </a>
+            </div>
+
+            {# Premium #}
+            <div class="lf-pricing-card">
+                <h4 class="lf-pricing-card__name">{{ trans('lawfirm.pricing.ip_premium_name') }}</h4>
+                <p class="lf-pricing-card__subtitle">{{ trans('lawfirm.pricing.ip_premium_sub') }}</p>
+                <div class="lf-pricing-card__price">{{ trans('lawfirm.pricing.ip_premium_price') }}</div>
+                <div class="lf-pricing-card__divider"></div>
+                <ul class="lf-pricing-card__features">
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.ip_premium_f1') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.ip_premium_f2') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.ip_premium_f3') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.ip_premium_f4') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.ip_premium_f5') }}</span>
+                    </li>
+                    <li class="lf-pricing-card__feature">
+                        <i class="sicon-check-circle"></i>
+                        <span>{{ trans('lawfirm.pricing.ip_premium_f6') }}</span>
+                    </li>
+                </ul>
+                <a href="#lf-contact" class="lf-btn lf-btn--outline-gold w-full text-center">
+                    {{ trans('lawfirm.pricing.cta') }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

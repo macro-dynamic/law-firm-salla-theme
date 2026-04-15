@@ -1,0 +1,102 @@
+{# ============================================================
+   LAW FIRM — Emergency IP + About Brief + Approach
+   ============================================================ #}
+
+{# ---- Emergency IP Protection Banner ---- #}
+<section class="lf-emergency">
+    <div class="lf-emergency__content">
+        <div class="lf-emergency__text">
+            <h3>
+                <i class="sicon-warning text-yellow-300"></i>
+                {{ trans('lawfirm.emergency.title') }}
+            </h3>
+            <p>{{ trans('lawfirm.emergency.desc') }}</p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3">
+            {% if store.contacts.whatsapp %}
+            <a href="https://wa.me/{{ store.contacts.whatsapp }}" target="_blank" rel="noopener" class="lf-btn lf-btn--whatsapp">
+                <i class="sicon-whatsapp rtl:ml-2 ltr:mr-2"></i>
+                {{ trans('lawfirm.emergency.cta_whatsapp') }}
+            </a>
+            {% endif %}
+            <a href="#lf-contact" class="lf-btn lf-btn--outline" style="border-color: rgba(255,255,255,0.5);">
+                {{ trans('lawfirm.emergency.cta_call') }}
+            </a>
+        </div>
+    </div>
+</section>
+
+{# ---- About Brief Section ---- #}
+<section class="lf-section">
+    <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div>
+                <span class="lf-section__label">{{ trans('lawfirm.about.label') }}</span>
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6" style="color: var(--lf-navy);">
+                    {{ trans('lawfirm.about.title') }}
+                </h2>
+                <p class="text-base leading-relaxed mb-8" style="color: var(--lf-text-light);">
+                    {{ trans('lawfirm.about.description') }}
+                </p>
+
+                <div class="space-y-3 mb-8">
+                    <div class="lf-about__feature">
+                        <span class="lf-about__feature-icon"><i class="sicon-check"></i></span>
+                        <span class="lf-about__feature-text">{{ trans('lawfirm.about.f1') }}</span>
+                    </div>
+                    <div class="lf-about__feature">
+                        <span class="lf-about__feature-icon"><i class="sicon-check"></i></span>
+                        <span class="lf-about__feature-text">{{ trans('lawfirm.about.f2') }}</span>
+                    </div>
+                    <div class="lf-about__feature">
+                        <span class="lf-about__feature-icon"><i class="sicon-check"></i></span>
+                        <span class="lf-about__feature-text">{{ trans('lawfirm.about.f3') }}</span>
+                    </div>
+                    <div class="lf-about__feature">
+                        <span class="lf-about__feature-icon"><i class="sicon-check"></i></span>
+                        <span class="lf-about__feature-text">{{ trans('lawfirm.about.f4') }}</span>
+                    </div>
+                </div>
+            </div>
+
+            {# Approach Steps #}
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold mb-4" style="color: var(--lf-navy);">
+                    {{ trans('lawfirm.approach.title') }}
+                </h3>
+
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold" style="background: var(--lf-gold); color: var(--lf-navy);">1</div>
+                    <div>
+                        <h4 class="font-bold mb-1" style="color: var(--lf-navy);">{{ trans('lawfirm.approach.step1_title') }}</h4>
+                        <p class="text-sm" style="color: var(--lf-text-light);">{{ trans('lawfirm.approach.step1_desc') }}</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold" style="background: var(--lf-gold); color: var(--lf-navy);">2</div>
+                    <div>
+                        <h4 class="font-bold mb-1" style="color: var(--lf-navy);">{{ trans('lawfirm.approach.step2_title') }}</h4>
+                        <p class="text-sm" style="color: var(--lf-text-light);">{{ trans('lawfirm.approach.step2_desc') }}</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold" style="background: var(--lf-gold); color: var(--lf-navy);">3</div>
+                    <div>
+                        <h4 class="font-bold mb-1" style="color: var(--lf-navy);">{{ trans('lawfirm.approach.step3_title') }}</h4>
+                        <p class="text-sm" style="color: var(--lf-text-light);">{{ trans('lawfirm.approach.step3_desc') }}</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold" style="background: var(--lf-gold); color: var(--lf-navy);">4</div>
+                    <div>
+                        <h4 class="font-bold mb-1" style="color: var(--lf-navy);">{{ trans('lawfirm.approach.step4_title') }}</h4>
+                        <p class="text-sm" style="color: var(--lf-text-light);">{{ trans('lawfirm.approach.step4_desc') }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

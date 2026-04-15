@@ -1,0 +1,113 @@
+{# ============================================================
+   LAW FIRM — Services Grid
+   7 service areas in responsive cards
+   ============================================================ #}
+<section id="lf-services" class="lf-section lf-section--gray">
+    <div class="container">
+        <div class="lf-section__header">
+            <span class="lf-section__label">{{ trans('lawfirm.services.label') }}</span>
+            <h2 class="lf-section__title">{{ trans('lawfirm.services.title') }}</h2>
+            <p class="lf-section__subtitle">{{ trans('lawfirm.services.subtitle') }}</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {# Service 1 — Trademark Registration #}
+            <div class="lf-service-card">
+                <div class="lf-service-card__icon">
+                    <i class="sicon-verified-badge"></i>
+                </div>
+                <h3 class="lf-service-card__title">{{ trans('lawfirm.services.s1_title') }}</h3>
+                <p class="lf-service-card__desc">{{ trans('lawfirm.services.s1_desc') }}</p>
+                <a href="#lf-pricing" class="lf-service-card__link">
+                    {{ trans('lawfirm.services.learn_more') }}
+                    <i class="sicon-keyboard_arrow_left rtl:block ltr:hidden"></i>
+                    <i class="sicon-keyboard_arrow_right ltr:block rtl:hidden"></i>
+                </a>
+            </div>
+
+            {# Service 2 — IP Protection #}
+            <div class="lf-service-card">
+                <div class="lf-service-card__icon">
+                    <i class="sicon-shield"></i>
+                </div>
+                <h3 class="lf-service-card__title">{{ trans('lawfirm.services.s2_title') }}</h3>
+                <p class="lf-service-card__desc">{{ trans('lawfirm.services.s2_desc') }}</p>
+                <a href="#lf-contact" class="lf-service-card__link">
+                    {{ trans('lawfirm.services.learn_more') }}
+                    <i class="sicon-keyboard_arrow_left rtl:block ltr:hidden"></i>
+                    <i class="sicon-keyboard_arrow_right ltr:block rtl:hidden"></i>
+                </a>
+            </div>
+
+            {# Service 3 — Copyright #}
+            <div class="lf-service-card">
+                <div class="lf-service-card__icon">
+                    <i class="sicon-file"></i>
+                </div>
+                <h3 class="lf-service-card__title">{{ trans('lawfirm.services.s3_title') }}</h3>
+                <p class="lf-service-card__desc">{{ trans('lawfirm.services.s3_desc') }}</p>
+                <a href="#lf-contact" class="lf-service-card__link">
+                    {{ trans('lawfirm.services.learn_more') }}
+                    <i class="sicon-keyboard_arrow_left rtl:block ltr:hidden"></i>
+                    <i class="sicon-keyboard_arrow_right ltr:block rtl:hidden"></i>
+                </a>
+            </div>
+
+            {# Service 4 — Trade Names #}
+            <div class="lf-service-card">
+                <div class="lf-service-card__icon">
+                    <i class="sicon-tag"></i>
+                </div>
+                <h3 class="lf-service-card__title">{{ trans('lawfirm.services.s4_title') }}</h3>
+                <p class="lf-service-card__desc">{{ trans('lawfirm.services.s4_desc') }}</p>
+                <a href="#lf-contact" class="lf-service-card__link">
+                    {{ trans('lawfirm.services.learn_more') }}
+                    <i class="sicon-keyboard_arrow_left rtl:block ltr:hidden"></i>
+                    <i class="sicon-keyboard_arrow_right ltr:block rtl:hidden"></i>
+                </a>
+            </div>
+
+            {# Service 5 — Industrial Designs #}
+            <div class="lf-service-card">
+                <div class="lf-service-card__icon">
+                    <i class="sicon-layers"></i>
+                </div>
+                <h3 class="lf-service-card__title">{{ trans('lawfirm.services.s5_title') }}</h3>
+                <p class="lf-service-card__desc">{{ trans('lawfirm.services.s5_desc') }}</p>
+                <a href="#lf-contact" class="lf-service-card__link">
+                    {{ trans('lawfirm.services.learn_more') }}
+                    <i class="sicon-keyboard_arrow_left rtl:block ltr:hidden"></i>
+                    <i class="sicon-keyboard_arrow_right ltr:block rtl:hidden"></i>
+                </a>
+            </div>
+
+            {# Service 6 — IP Disputes #}
+            <div class="lf-service-card">
+                <div class="lf-service-card__icon">
+                    <i class="sicon-balance"></i>
+                </div>
+                <h3 class="lf-service-card__title">{{ trans('lawfirm.services.s6_title') }}</h3>
+                <p class="lf-service-card__desc">{{ trans('lawfirm.services.s6_desc') }}</p>
+                <a href="#lf-contact" class="lf-service-card__link">
+                    {{ trans('lawfirm.services.learn_more') }}
+                    <i class="sicon-keyboard_arrow_left rtl:block ltr:hidden"></i>
+                    <i class="sicon-keyboard_arrow_right ltr:block rtl:hidden"></i>
+                </a>
+            </div>
+
+            {# Service 7 — Legal Consultation #}
+            <div class="lf-service-card">
+                <div class="lf-service-card__icon">
+                    <i class="sicon-chat"></i>
+                </div>
+                <h3 class="lf-service-card__title">{{ trans('lawfirm.services.s7_title') }}</h3>
+                <p class="lf-service-card__desc">{{ trans('lawfirm.services.s7_desc') }}</p>
+                <a href="#lf-contact" class="lf-service-card__link">
+                    {{ trans('lawfirm.services.learn_more') }}
+                    <i class="sicon-keyboard_arrow_left rtl:block ltr:hidden"></i>
+                    <i class="sicon-keyboard_arrow_right ltr:block rtl:hidden"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,5 +1,319 @@
 {
     "name": {
+        "ar": "مكتب محاماة",
+        "en": "Law Firm"
+    },
+    "repository": "https://github.com/elhassounimd71-art/law-firm-salla-theme",
+    "author_email": "support@salla.sa",
+    "features": [
+        "mega-menu",
+        "fonts",
+        "color",
+        "breadcrumb",
+        "unite-cards-height",
+        "component-featured-products",
+        "component-fixed-banner",
+        "component-testimonials",
+        "component-store-features",
+        "component-products-slider",
+        "component-photos-slider",
+        "component-square-photos",
+        "filters"
+    ],
+    "settings": [
+        {
+            "type": "static",
+            "format": "title",
+            "id": "static-label-header",
+            "value": "<div class='rounded-lg' style='background-color: #1a1a2e; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #c9a84c;font-size: 15px; font-weight: bold;'>خيارات أعلى الصفحة</h6></div>",
+            "variant": "h6"
+        },
+        {
+            "id": "header_is_sticky",
+            "label": "تثبيت القائمة الرئيسية أعلى الصفحة",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "شريط علوي داكن",
+            "id": "topnav_is_dark",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "عرض روابط الصفحات الهامة في الشريط العلوي",
+            "id": "important_links",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "تفعيل قائمة المزيد",
+            "id": "enable_more_menu",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
+            "type": "static",
+            "id": "static-line-footer",
+            "format": "line"
+        },
+        {
+            "type": "static",
+            "format": "title",
+            "id": "static-label-footer",
+            "value": "<div class='rounded-lg' style='background-color: #1a1a2e; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #c9a84c;font-size: 15px; font-weight: bold;'>خيارات أسفل الصفحة</h6></div>",
+            "variant": "h6"
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "الوضع الداكن للفوتر",
+            "id": "footer_is_dark",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
+            "type": "static",
+            "id": "static-line-product",
+            "format": "line"
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "تفعيل إشعار الإضافة للسلة المحسن",
+            "id": "enable_add_product_toast",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "تثبيت زر الإضافة والكمية أسفل شاشة الجوال",
+            "id": "sticky_add_to_cart",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "إظهار الوسوم",
+            "id": "show_tags",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
+            "id": "slider_background_size",
+            "type": "items",
+            "format": "dropdown-list",
+            "label": "طريقة عرض الصور في سليدر صور المنتج",
+            "icon": "sicon-list",
+            "selected": [
+                {
+                    "label": "اظهار الصورة كاملة (Contain)",
+                    "value": "contain",
+                    "key": "f4adec13-6e4c-433b-b141-b2807935ced9"
+                }
+            ],
+            "options": [
+                {
+                    "label": "تغطية كامل المساحة (Cover)",
+                    "value": "cover",
+                    "key": "e9c8ea8f-c5c6-438e-9d45-3bce269afde4"
+                },
+                {
+                    "label": "اظهار الصورة كاملة (Contain)",
+                    "value": "contain",
+                    "key": "f4adec13-6e4c-433b-b141-b2807935ced9"
+                }
+            ],
+            "source": "Manual",
+            "required": true
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "تكبير الصور في سليدر صور المنتج",
+            "id": "imageZoom",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false
+        }
+    ],
+    "components": [
+        {
+            "key": "186b3f4f-25cf-4d3c-abca-cef7eed6f0ab",
+            "title": {
+                "en": "Hero Slider",
+                "ar": "سليدر رئيسي"
+            },
+            "icon": "sicon-image-carousel",
+            "path": "home.enhanced-slider",
+            "fields": [
+                {
+                    "id": "slides",
+                    "type": "collection",
+                    "format": "collection",
+                    "required": true,
+                    "minLength": 1,
+                    "maxLength": 5,
+                    "item_label": "صورة",
+                    "value": [
+                        {
+                            "slides.image": "https://cdn.salla.sa/ZrBEO/MopzhoqpTkDObcKc8Q8n77AuydanfsGXdZO7iinH.jpg",
+                            "slides.title": "حماية علامتك التجارية تبدأ هنا",
+                            "slides.description": "خدمات قانونية متخصصة في الملكية الفكرية والعقود التجارية",
+                            "slides.without_overlay": false
+                        }
+                    ],
+                    "fields": [
+                        {
+                            "type": "string",
+                            "icon": "sicon-image",
+                            "id": "slides.image",
+                            "label": "صورة البنر",
+                            "format": "image",
+                            "required": true
+                        },
+                        {
+                            "type": "string",
+                            "icon": "sicon-format-text-alt",
+                            "label": "عنوان رئيسي",
+                            "multilanguage": true,
+                            "id": "slides.title",
+                            "format": "text",
+                            "required": false,
+                            "maxLength": 100
+                        },
+                        {
+                            "type": "string",
+                            "icon": "sicon-typography",
+                            "label": "نص إضافي",
+                            "multilanguage": true,
+                            "id": "slides.description",
+                            "format": "textarea",
+                            "required": false,
+                            "maxLength": 255
+                        },
+                        {
+                            "type": "boolean",
+                            "icon": "sicon-toggle-off",
+                            "label": "إزالة طبقة التعتم",
+                            "id": "slides.without_overlay",
+                            "format": "switch",
+                            "value": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "541cc423-90c7-4230-8a33-a0342cfde4ad",
+            "title": {
+                "en": "Client Testimonials",
+                "ar": "آراء العملاء"
+            },
+            "icon": "sicon-chat-bubbles",
+            "path": "home.custom-testimonials",
+            "fields": [
+                {
+                    "id": "items",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "التقييمات",
+                    "item_label": "تقييم",
+                    "value": [
+                        {
+                            "items.name": "خالد المنصور",
+                            "items.avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
+                            "items.stars": 5,
+                            "items.text": "خدمة احترافية في تسجيل العلامات التجارية، أنصح بها بشدة"
+                        },
+                        {
+                            "items.name": "نورة الأحمد",
+                            "items.avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_female.png",
+                            "items.stars": 5,
+                            "items.text": "فريق محترف ومتعاون، ساعدونا في صياغة جميع عقود الشركة"
+                        },
+                        {
+                            "items.name": "عبدالعزيز الراشد",
+                            "items.avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
+                            "items.stars": 5,
+                            "items.text": "سرعة في التنفيذ ووضوح في التعامل، تجربة ممتازة"
+                        }
+                    ],
+                    "fields": [
+                        {
+                            "id": "items.name",
+                            "type": "string",
+                            "format": "text",
+                            "label": "اسم العميل",
+                            "icon": "sicon-format-text-alt"
+                        },
+                        {
+                            "id": "items.avatar",
+                            "type": "string",
+                            "format": "image",
+                            "label": "صورة العميل",
+                            "icon": "sicon-image",
+                            "required": true
+                        },
+                        {
+                            "id": "items.stars",
+                            "type": "number",
+                            "format": "integer",
+                            "label": "عدد النجوم",
+                            "value": 5,
+                            "minimum": 1,
+                            "maximum": 5
+                        },
+                        {
+                            "id": "items.text",
+                            "type": "string",
+                            "format": "textarea",
+                            "label": "نص التقييم",
+                            "multilanguage": true
+                        }
+                    ],
+                    "required": false,
+                    "minLength": 1,
+                    "maxLength": 30
+                }
+            ]
+        }
+    ],
+    "support_url": "https://salla.com/",
+    "description": {
+        "ar": "قالب مكتب محاماة — تصميم احترافي لمنصات الخدمات القانونية",
+        "en": "Law Firm Theme — Professional design for legal service platforms"
+    }
+}
+{
+    "name": {
         "ar": "رائد",
         "en": "Theme Raed"
     },

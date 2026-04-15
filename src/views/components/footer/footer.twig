@@ -53,6 +53,17 @@
 			<div>
 				<salla-contacts></salla-contacts>
 
+				{# WhatsApp shortcut in footer #}
+				{% if store.contacts.whatsapp %}
+				<div class="mt-4">
+					<a href="https://wa.me/{{ store.contacts.whatsapp }}" target="_blank" rel="noopener"
+					   class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-colors bg-green-600 text-white hover:bg-green-700">
+						<i class="sicon-whatsapp"></i>
+						{{ trans('lawfirm.cta.whatsapp') }}
+					</a>
+				</div>
+				{% endif %}
+
 				<div class="lg:hidden contact-social">
 					<salla-social></salla-social>
 				</div>
